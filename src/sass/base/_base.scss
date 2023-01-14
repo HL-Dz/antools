@@ -54,3 +54,40 @@ h6 {
   display: flex;
   align-items: center;
 }
+
+.title {
+  color: $title-color;
+  line-height: 64px;
+}
+
+.description {
+  font-size: 1.8rem;
+  color: $font-color;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 15px;
+  background: $form-color;
+  border: 1px solid #252c32;
+  height: 64px;
+  .icon-wrap {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 13px;
+  }
+  .input-control {
+    width: 100%;
+    margin-right: 15px;
+    background: #283036;
+    outline: none;
+    border: none;
+    color: #837a93;
+    font-family: "Poppins", sans-serif;
+  }
+}

@@ -1,0 +1,45 @@
+.hero {
+  .designer-container {
+  }
+}
+
+.tools {
+  display: flex;
+  &-left,
+  &-right {
+    width: 50%;
+  }
+  &-left {
+    display: flex;
+    flex-direction: column;
+    .designer {
+      max-width: 600px;
+      margin-bottom: 110px;
+      margin-top: 46px;
+      .title {
+        margin-bottom: 30px;
+      }
+      .description {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -150px;
+  }
+}
+
+.socials {
+  display: flex;
+  margin-top: auto;
+  .social-item {
+    width: 34px;
+    height: 34px;
+    margin-right: 35px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
