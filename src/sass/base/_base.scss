@@ -55,6 +55,11 @@ h6 {
   align-items: center;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   color: $title-color;
   line-height: 64px;
@@ -87,7 +92,76 @@ h6 {
     background: #283036;
     outline: none;
     border: none;
-    color: #837a93;
+    color: #7a7f82;
     font-family: "Poppins", sans-serif;
+  }
+}
+
+.tool {
+  @extend %main-transition;
+  position: relative;
+  padding: 33px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  max-width: 392px;
+  margin-bottom: 100px;
+  width: 32%;
+
+  &-active {
+    border-color: #293036;
+    top: -20px;
+    background: rgba(40, 48, 54, 0.6);
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.08) rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(25px);
+    .tool__name {
+      color: #e9eaea;
+    }
+  }
+
+  &__top {
+    display: flex;
+    margin-bottom: 30px;
+    .tool__pic {
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 30px;
+    }
+    .tool__desc {
+      .tool__name {
+        color: $tool-title-color;
+        font-size: 24px;
+        margin-bottom: 3px;
+      }
+      .tool_plan {
+        color: $tool-plan-color;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  &__center {
+    color: $tool-desc-color;
+    margin-bottom: 30px;
+  }
+  &__bottom {
+    display: flex;
+    .heart-wrap,
+    .folder-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+    }
+    .heart-wrap {
+      margin-right: 12px;
+    }
   }
 }

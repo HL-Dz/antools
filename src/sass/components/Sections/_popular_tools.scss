@@ -1,0 +1,21 @@
+.popular-tools {
+  .title {
+    margin-bottom: 25px;
+  }
+  .description {
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.tools-buttons {
+  display: flex;
+  justify-content: center;
+}

@@ -9,8 +9,8 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="container">
-        <div className="tools">
-          <div className="tools-left">
+        <div className="dev">
+          <div className="dev-left">
             <div className="designer">
               <SectionTitle body="Awesome tools for Designer & Developer." />
               <Description
@@ -21,12 +21,17 @@ const Hero = () => {
                 icon="search"
                 placeholder="find more than 430+ tools..."
               >
-                <Button type="primary" text="Search" width="130px" />
+                <Button
+                  type="primary"
+                  text="Search"
+                  width="130px"
+                  cls="button-shadow"
+                />
               </FormControl>
             </div>
             <Socials />
           </div>
-          <div className="tools-right">
+          <div className="dev-right">
             <img src={tool} alt="Tool" />
           </div>
         </div>
