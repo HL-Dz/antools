@@ -1,0 +1,49 @@
+.header {
+  margin-bottom: 10.4rem;
+  .header-wrap {
+    @include flex-container;
+    .buttons-wrap {
+      margin-left: auto;
+
+      .button-secondary {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.logo-container {
+  @include flex-container;
+  margin-right: 25.7rem;
+}
+
+.logo-wrap {
+  width: 38px;
+  height: 38px;
+}
+
+.logo-name {
+  color: #ffffffe5;
+  margin-left: 12px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 33px;
+}
+
+.navigation {
+  .nav {
+    .nav__list {
+      @include flex-container;
+      .nav__item {
+        margin-right: 4rem;
+        &:last-child {
+          margin-right: 0;
+        }
+        .nav__link {
+          color: #ffffff8c;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
