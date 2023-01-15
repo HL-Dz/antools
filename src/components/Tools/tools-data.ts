@@ -52,7 +52,7 @@ const data = [
     name: "Invision",
     plan: "Free & Paid",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    selected: false,
+    selected: true,
   },
 ];
 
