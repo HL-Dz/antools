@@ -1,0 +1,41 @@
+.newcomers {
+  margin-bottom: 200px;
+  .newcomers__wrap {
+    display: flex;
+    justify-content: space-between;
+    .newcomers__left {
+      width: 427px;
+      .title {
+        margin-bottom: 30px;
+      }
+      .description {
+        margin-bottom: 60px;
+      }
+    }
+    .newcomers__right {
+      width: 600px;
+      .newcomers__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .tool {
+          width: 288px;
+          min-width: 288px;
+          padding: 28px 21px;
+          margin-bottom: 70px;
+          .tool__name {
+            font-weight: 500;
+          }
+          .tool__center {
+            font-size: 14px;
+          }
+          .tool__bottom {
+            .button-visit {
+              width: 106px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

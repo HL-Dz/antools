@@ -1,5 +1,6 @@
 .hero {
   margin-bottom: 200px;
+  position: relative;
 }
 
 .dev {
@@ -27,6 +28,10 @@
     display: flex;
     justify-content: flex-end;
     margin-right: -150px;
+    img {
+      position: absolute;
+      right: -20px;
+    }
   }
 }
 
