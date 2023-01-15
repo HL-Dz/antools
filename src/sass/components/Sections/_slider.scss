@@ -1,0 +1,117 @@
+.slideshow {
+  margin-bottom: 250px;
+  .slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    .dot {
+      width: 44px;
+      height: 8px;
+      border-radius: 4px;
+      background: #283036;
+      margin-right: 18px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &-active {
+        background: #ff6e30; // active
+      }
+    }
+  }
+  .slider__wrap {
+    position: relative;
+    display: flex;
+    .arrow-left,
+    .arrow-right {
+      z-index: 1;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 100px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .arrow-left {
+      left: 0;
+    }
+    .arrow-right {
+      right: 0;
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .slide {
+    display: flex;
+    margin: auto;
+    .slide__pic {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 400px;
+      width: 400px;
+      height: 492px;
+      background-image: url("../../../assets/images/circle.png");
+      background-position: 0 77px;
+      background-repeat: no-repeat;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .person {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        max-width: 265px;
+        width: 265px;
+        right: 0;
+        bottom: 29px;
+        padding: 10px 22px;
+        border-radius: 8px;
+        background: linear-gradient(
+          to top left,
+          rgba(30, 59, 81, 1),
+          rgba(38, 50, 60, 1),
+          rgba(34, 44, 52, 1)
+        );
+        .person__name {
+          font-size: 26px;
+          font-weight: 500;
+          line-height: 39px;
+          color: #d1d0d2;
+          margin-bottom: 2px;
+        }
+        .person__position {
+          font-size: 16px;
+          line-height: 24px;
+          color: #fffdfd8c;
+        }
+      }
+    }
+    .slide__comment {
+      position: relative;
+      width: 462px;
+      height: 336px;
+      background-image: url("../../../assets/images/quote.png");
+      background-repeat: no-repeat;
+      background-position: -9px 61px;
+      .comment {
+        font-family: "Roboto", sans-serif;
+        line-height: 30px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.78);
+        width: 393px;
+        word-spacing: 1px;
+        margin-top: 110px;
+        margin-left: 50px;
+      }
+    }
+  }
+}
