@@ -23,6 +23,13 @@
           min-width: 288px;
           padding: 28px 21px;
           margin-bottom: 70px;
+          &-active {
+            background: radial-gradient(
+              circle closest-side at 246px 28px,
+              rgb(62, 52, 50) 52%,
+              rgb(36, 44, 50) 255%
+            );
+          }
           .tool__name {
             font-weight: 500;
           }

@@ -5,6 +5,11 @@
 .companies__wrap {
   padding: 55px 83px;
   background: rgba(44, 53, 61, 0.2);
+  background: radial-gradient(
+    circle closest-side at 24px 25px,
+    rgb(62, 52, 50) 52%,
+    rgb(36, 44, 50) 350%
+  );
   border-radius: 25px;
   border: 1px solid #374450;
   .companies__title {

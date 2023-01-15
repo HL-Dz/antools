@@ -154,6 +154,11 @@ h6 {
     border-color: #293036;
     top: -20px;
     background: rgba(40, 48, 54, 0.6);
+    background: radial-gradient(
+      circle closest-side at 360px 42px,
+      rgb(62, 52, 50) 52%,
+      rgb(36, 44, 50) 255%
+    );
     box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.3);
     .tool__top {
       .tool__name {
