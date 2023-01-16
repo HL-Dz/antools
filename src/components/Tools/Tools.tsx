@@ -10,7 +10,6 @@ const Tools = () => {
   const selectTool = (id: number) => {
     dispatch(updatePopularTool(id));
   };
-  console.log(popular_tools);
   return (
     <div className="tools">
       {popular_tools.map((el) => {
