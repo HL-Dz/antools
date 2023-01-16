@@ -1,6 +1,5 @@
 import { FC } from "react";
 import search from "../../assets/images/icons/search.svg";
-import Button from "../Buttons/Button";
 
 type TFormControl = {
   placeholder: string;

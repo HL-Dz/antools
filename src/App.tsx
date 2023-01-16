@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/header";
 import Companies from "./components/Sections/Companies/Companies";
 import Contributor from "./components/Sections/Contributor/Contributor";
@@ -17,6 +18,7 @@ function App() {
       <Newcomers />
       <Slider />
       <Contributor />
+      <Footer />
     </div>
   );
 }

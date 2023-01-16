@@ -4,7 +4,7 @@ import HeaderLogo from "./HeaderLogo/header-logo";
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <div className="container">
         <div className="header-wrap">
           <HeaderLogo />
@@ -12,7 +12,7 @@ const Header = () => {
           <HeaderButtons />
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
