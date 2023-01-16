@@ -48,7 +48,7 @@ const data = [
   },
   {
     id: 6,
-    img: slack,
+    img: invision,
     name: "Invision",
     plan: "Free & Paid",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

@@ -24,7 +24,7 @@ const links: MenuItem[] = [
       { id: 3, body: "Comedy", path: "#" },
       { id: 4, body: "Fantasy", path: "#" },
       { id: 5, body: "Sports", path: "#" },
-      { id: 5, body: "Thriller", path: "#" },
+      { id: 6, body: "Thriller", path: "#" },
     ],
   },
   {

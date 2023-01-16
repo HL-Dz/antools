@@ -19,3 +19,28 @@
     top: -10px;
   }
 }
+
+@keyframes scaleHeart {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(2.2);
+    box-shadow: 0px 0px 7px 7px rgb(238, 236, 236);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes tool-card {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -60px;
+  }
+  100% {
+    top: -20px;
+  }
+}

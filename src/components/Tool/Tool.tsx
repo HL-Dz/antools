@@ -1,33 +1,27 @@
 import { FC } from "react";
+import { TTool } from "../../types/types";
 
-import figma from "../../assets/images/tools/figma.svg";
 import Button from "../Buttons/Button";
 
-type TTool = {
-  id: number;
-  img: string;
-  name: string;
-  plan: string;
-  body: string;
-  selected: boolean;
-};
-
-const Tool: FC<TTool> = ({ img, name, plan, body, selected }) => {
-  let selectedTool = selected ? " tool-active" : "";
+const Tool: FC<TTool> = (
+  // { id, img, name, plan, body, selected },
+  props
+) => {
+  let selectedTool = props.selected ? " tool-active" : "";
   return (
     <div className={`tool flex-column${selectedTool}`}>
       <div className="tool__top">
         <div className="tool__pic">
-          <img src={img} alt={name} className="tool__img" />
+          <img src={props.img} alt={props.name} className="tool__img" />
         </div>
         <div className="tool__desc">
-          <div className="tool__name">{name}</div>
-          <div className="tool_plan">{plan}</div>
+          <div className="tool__name">{props.name}</div>
+          <div className="tool_plan">{props.plan}</div>
         </div>
       </div>
-      <div className="tool__center">{body}</div>
+      <div className="tool__center">{props.body}</div>
       <div className="tool__bottom">
-        <div className="heart-wrap">
+        <div className="heart-wrap" onClick={() => props.selectTool(props.id)}>
           <svg
             width="26"
             height="22"

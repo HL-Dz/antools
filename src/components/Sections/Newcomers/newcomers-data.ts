@@ -3,7 +3,7 @@ import phpstorm from "../../../assets/images/tools/phpstorm.svg";
 import toolbox from "../../../assets/images/tools/toolbox.svg";
 import procreate from "../../../assets/images/tools/procreate.svg";
 
-const newcomersData = [
+export const newcomersData = [
   {
     id: 1,
     img: zepling,

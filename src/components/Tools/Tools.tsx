@@ -1,11 +1,20 @@
+import { useTypedSelector } from "../../types/useTypedSelector";
 import Tool from "../Tool/Tool";
-import data from "./tools-data";
+import { useDispatch } from "react-redux";
+import { updatePopularTool } from "../../redux/page-reducer";
 
 const Tools = () => {
+  const { popular_tools } = useTypedSelector((state) => state.page);
+  const dispatch = useDispatch();
+
+  const selectTool = (id: number) => {
+    dispatch(updatePopularTool(id));
+  };
+  console.log(popular_tools);
   return (
     <div className="tools">
-      {data.map((el) => {
-        return <Tool key={el.id} {...el} />;
+      {popular_tools.map((el) => {
+        return <Tool key={el.id} {...el} selectTool={selectTool} />;
       })}
     </div>
   );

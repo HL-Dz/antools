@@ -147,10 +147,12 @@ h6 {
     }
     .heart-wrap {
       margin-right: 12px;
+      cursor: pointer;
     }
   }
 
   &-active {
+    @extend %main-transition;
     border-color: #293036;
     top: -20px;
     background: rgba(40, 48, 54, 0.6);
@@ -160,6 +162,7 @@ h6 {
       rgb(36, 44, 50) 255%
     );
     box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.3);
+    animation: tool-card 0.7s ease;
     .tool__top {
       .tool__name {
         color: #e9eaea;
@@ -174,6 +177,7 @@ h6 {
     .tool__bottom {
       .heart-wrap {
         box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.3);
+        animation: scaleHeart 0.5s ease;
         path {
           fill: #fd3b41;
           fill-opacity: 1;

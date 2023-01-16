@@ -2,9 +2,16 @@ import Button from "../../Buttons/Button";
 import Description from "../../Description/Description";
 import SectionTitle from "../../SectionTitle/SectionTitle";
 import Tool from "../../Tool/Tool";
-import data from "./newcomers-data";
+import { useDispatch } from "react-redux";
+import { useTypedSelector } from "../../../types/useTypedSelector";
+import { updateNewcomerTool } from "../../../redux/page-reducer";
 
 const Newcomers = () => {
+  const { newcomer_tools } = useTypedSelector((state) => state.page);
+  const dispatch = useDispatch();
+  const selectTool = (id: number) => {
+    dispatch(updateNewcomerTool(id));
+  };
   return (
     <div className="newcomers">
       <div className="container">
@@ -19,8 +26,8 @@ const Newcomers = () => {
           </div>
           <div className="newcomers__right">
             <div className="newcomers__list">
-              {data.map((tool) => {
-                return <Tool {...tool} key={tool.id} />;
+              {newcomer_tools.map((tool) => {
+                return <Tool {...tool} key={tool.id} selectTool={selectTool} />;
               })}
             </div>
           </div>
