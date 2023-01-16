@@ -35,13 +35,28 @@
     .nav__list {
       @include flex-container;
       .nav__item {
+        position: relative;
         margin-right: 4rem;
         &:last-child {
           margin-right: 0;
         }
         .nav__link {
+          @extend %main-transition;
           color: #ffffff8c;
+          display: inline-flex;
           font-weight: 500;
+          &:hover {
+            color: #fff;
+          }
+          .nav__arrow {
+            // @extend %main-transition;
+            transition: all 0.3s ease;
+            transform: rotate(90deg);
+            margin-left: 10px;
+            &-active {
+              transform: rotate(-90deg);
+            }
+          }
         }
       }
     }

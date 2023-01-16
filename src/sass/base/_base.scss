@@ -238,3 +238,48 @@ h6 {
     }
   }
 }
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  min-width: 200px;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  background: #232b32;
+  box-shadow: 0px 5px 10px -3px rgb(18 18 18 / 30%);
+  margin-top: 7px;
+  z-index: 1;
+  animation: show-dropdown 0.5s ease;
+  &-hidden {
+    animation: hide-dropdown 0.7s ease;
+  }
+  &__item {
+    border-bottom: 1px solid #1e1d1d;
+    overflow: hidden;
+    &:last-child {
+      border-bottom: none;
+    }
+    &:first-child {
+      border-radius: 8px 8px 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 8px 8px;
+    }
+    .dropdown__link {
+      @extend %main-transition;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: #ffffff8c;
+      padding: 5px;
+      &:hover {
+        background: #283138;
+        color: #fff;
+        transform: scale(1.1);
+        will-change: transform;
+      }
+    }
+  }
+}

@@ -1,5 +1,4 @@
 import socialsData from "./socials-data";
-import fb from "../../assets/images/icons/fb.svg";
 import SocialItem from "./SocialItem";
 
 const Socials = () => {
