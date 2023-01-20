@@ -8,7 +8,7 @@
 
 <u>Link to the layout:</u> https://www.figma.com/file/mwpxceFA8KwJwCPy79GxVI/Antools%5B1%5D?node-id=0%3A1&t=roTT8y9LCkV5cjBz-0
 
-<u>What was done by me:</u> I made a layout according to a template. When implementing this project, I used [Create React App](https://github.com/facebook/create-react-app), Redux, SASS.
+<u>What was done by me:</u> I made a layout according to a template. When implementing this project, I used [Create React App](https://github.com/facebook/create-react-app), Typescript, Redux, SASS.
 
 <u>The result of my work is available at the link:</u> https://antools-app.netlify.app
 
