@@ -1,7 +1,27 @@
+# Test task antools
+
+<u>Task description:</u>
+- Make the layout of one page.
+- You can use any stack and libraries
+- Adaptive layout is not required
+- You cannot implement js (only wrap the slider)
+
+<u>Link to the layout:</u> https://www.figma.com/file/mwpxceFA8KwJwCPy79GxVI/Antools%5B1%5D?node-id=0%3A1&t=roTT8y9LCkV5cjBz-0
+
+<u>What was done by me:</u> I made a layout according to a template. When implementing this project, I used [Create React App](https://github.com/facebook/create-react-app), Redux, SASS.
+
+<u>The result of my work is available at the link:</u> https://antools-app.netlify.app
+
+<u>Screenshot:</u>
+![image](https://user-images.githubusercontent.com/33293124/213669876-1c7375cb-ad23-4b0b-912f-68444fe7e790.png)
+
+---
+
+<details>
+<summary>How to run this project locally</summary>
+
+
 # Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -44,3 +64,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+</details>
