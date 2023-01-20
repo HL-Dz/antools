@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8a83761d-cdc3-4fbb-ba44-91bdca805351/deploy-status)](https://app.netlify.com/sites/shimmering-axolotl-333a82/deploys)
-
 # Test task antools
 
 <u>Task description:</u>
